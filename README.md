@@ -1,27 +1,27 @@
-# DevopsPath
+# DevOps Path
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.4.
+> A DevOps Tools Path to Production for DevOps Learning and Design. Design with Web Component can use it any page.
 
-## Development server
+![CI](https://github.com/phodal/devops-path/workflows/CI/badge.svg)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
+## Usage
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+```
+<wc-devops-path></wc-devops-path>
+<script src="https://phodal.github.io/devops-path/elements.js"></script>
+```
 
-## Build
+## Dev
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+1. install by `yarn install`
+2. run by `yarn start`
+3. deploy `yarn deploy`
 
-## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+License
+---
 
-## Running end-to-end tests
+[![Phodal's Idea](http://brand.phodal.com/shields/idea-small.svg)](http://ideas.phodal.com/)
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+@ 2020 A [Phodal Huang](https://www.phodal.com)'s [Idea](http://github.com/phodal/ideas).  This code is distributed under the MPL license. See `LICENSE` in this directory.
