@@ -1,0 +1,49 @@
+<div class="path">
+  <div class="header markdown">
+    <h3>Path to Production</h3>
+  </div>
+
+  <div>
+    <div>
+      <span></span>
+      <span class="spacer"></span>
+      <div class="right">
+        <button class="button" (click)="addColumn()">Add</button>
+        <span class="spacer">&nbsp;</span>
+        <button class="button" (click)="removeColumn()">Remove</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="page">
+    <div class="path">
+      <div id="pipe-header">
+        <div class="pipe-header" *ngFor="let pipe of pipeData;let i = index" id="{{i}}_header"
+             [ngStyle]="getHeaderHeight()">
+          <h2>{{pipe.title}}</h2>
+        </div>
+      </div>
+      <div class='wrapper' id="pipe">
+        <div class='container'
+             *ngFor="let pipe of pipeData;let i = index"
+             id="{{i}}_pipe"
+             dragula="ITEMS"
+             [(dragulaModel)]="pipe.items"
+             [ngStyle]="getContainerStyle(pipe)">
+
+          <div
+            class="editable"
+            #itemElement
+            id="pipe{{i}}_child{{j}}"
+            (dblclick)="enableEdit(i, j)"
+            [ngStyle]="getEditableStyle()"
+            (keydown.enter)="updateItem(i, j, $event)"
+            ngDefaultControl
+            *ngFor="let item of pipe.items;let j = index">
+            {{item}}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
