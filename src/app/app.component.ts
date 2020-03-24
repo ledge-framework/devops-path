@@ -11,6 +11,7 @@ export class AppComponent {
   title = 'devops-path';
   constructor(injector: Injector) {
     const CEElement = createCustomElement(PathComponent, {injector});
-    customElements.define('devops-path', CEElement);
+    // tslint:disable-next-line:no-unused-expression
+    customElements.get('devops-path') || customElements.define('devops-path', CEElement);
   }
 }
