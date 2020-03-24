@@ -4,6 +4,7 @@
 
 ![CI](https://github.com/phodal/devops-path/workflows/CI/badge.svg)
 
+![ScreenShot](docs/devops-path.png)
 
 ## Usage
 
